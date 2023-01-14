@@ -1,0 +1,5 @@
+.container {
+    height: 100vh;
+    background: url("/image/bg.jpg");
+    background-size: cover;
+}
