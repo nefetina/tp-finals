@@ -1,25 +1,59 @@
+import Link from "next/link";
 import styles from "./Background.module.css";
-import Link from 'next/link'
+
 
 const bg = () => {
-    return(
+    return (
         <div className={styles.container}>
-            <div className={styles.content}>
-                <div className={styles.head}>
-                    <img src="/image/logo.png" />
-                    <p>Tech</p>
-                    <p>People</p>
+  
+           <div className={styles.content1}>
+                <div className={styles.childcontent}>
+                  
+              
+                    <div className={styles.text}>
+                        <picture >
+                          <img className={styles.logo} src="/image/logo.png" alt="none"/>
+                        </picture>
+                        
+                        <p className = {styles.tech}>Tech</p>
+                        <p className = {styles.people}>People</p>
+    
+                    </div>
+                    <div className={styles.inputs}>
+  
+                      <input className={styles.input1} type="text" placeholder="Email"/>
+                      <input className={styles.input1}type="text" placeholder="Password"/>
+                    </div>
+                    
+                    <div className={styles.forgot}>
+                        
+                        <p className = {styles.pass}>Forgot Password??</p>
+                        
+    
+                    </div>
+                   
+                    <div className={styles.buttons}>
+                        
+                        <button className={styles.btn1}>Login</button>
+                        <div className={styles.lines}>
+                          <div className={styles.line}></div>
+                        </div>
+                        
+                        <button className={styles.btn2}>Signup</button>
+                        
+                        
+                    </div>
+                    
+                    
+                    
                 </div>
-                <input type="text" placeholder="EMAIL"/>
-                <input type="text" placeholder="PASSWORD"/>
-                <div>
-                    <Link href="/forgot">FORGOT PASSWORD?</Link>
-                </div>
-                <Link href="/renderpage">LOGIN</Link>
-                <Link href="/signup">SIGN UP</Link>
+               
             </div>
+         
+           
         </div>
-    );
+       
+      );
 };
 
 export default bg;
