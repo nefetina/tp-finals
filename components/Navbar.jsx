@@ -16,7 +16,8 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className={styles.buttons}>
-                    <Link href="/">LOGOUT</Link>
+                    <Link href="/">HOME</Link>
+                    <Link href="/aboutus">ABOUT US</Link>
                 </div>
             </div>
         </div>

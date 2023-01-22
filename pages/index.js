@@ -1,11 +1,18 @@
-import Background from "../components/Background";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Learn from "../components/Learn";
+import Deploy from "../components/Deploy";
+import Footer from "../components/Footer";
 
-function index() {
-  return(
-    <div>
-      <Background/>
-    </div>
-  )
+function TP() {
+    return (
+        <div>
+            <Navbar />
+            <Hero />
+            <Learn />
+            <Footer />
+        </div>
+        );
 }
 
-export default index;
+export default TP;
